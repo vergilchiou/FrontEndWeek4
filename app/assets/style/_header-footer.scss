@@ -1,0 +1,195 @@
+// Header
+header {
+  padding: 16px 0;
+  background-color: $color-bg-dr;
+}
+
+.logo {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 48.57px;
+
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav-header {
+  gap: 0 64px;
+
+  li {
+
+    a {
+      font-size: $fz-base + 4px; //20px
+      color: $color-text-wh;
+
+      &:hover {
+        color: darken($color-text-wh, 50%);
+      }
+    }
+  }
+
+}
+
+// FOOTER
+footer {
+  padding: 48px 0 32px;
+
+  a {
+    color: $color-text-wh;
+
+    &:hover {
+      color: darken($color-text-wh, 50%);
+    }
+  }
+}
+
+.nav-footer {
+  gap: 0 48px;
+  margin-bottom: 36px;
+
+}
+
+.footer-left {
+  ul {
+    display: flex;
+
+    // .contact-info
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        &:first-child {
+          margin-bottom: 8px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          font-size: $fz-base + 20px;
+        }
+
+        .material-symbols-outlined {
+          font-size: $fz-base * 3; //48px
+          margin-right: 20px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.social-media {
+  gap: 0 32px;
+
+  a {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.copy-right {
+  color: $color-text-wh;
+  border-top: 1px solid #fff;
+  margin-top: 32px;
+  padding-top: 32px;
+
+  ul {
+    gap: 0 48px;
+  }
+}
+
+// RWD
+
+
+@media(max-width:992px) {
+  footer {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+}
+
+
+@media(max-width:767px) {
+
+  header {
+    padding-top: 12px;
+    padding-bottom: 0;
+
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 16px 0;
+
+
+    .nav-header {
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 0;
+
+      li {
+        border: 1px solid #fff;
+        width: 50%;
+        padding: 12px 0;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .footer-left {
+
+    a,
+    p {
+      font-size: $fz-base;
+    }
+
+    .material-symbols-outlined {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+
+  .social-media {
+    gap: 0 16px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .nav-footer {
+    display: none !important;
+  }
+
+  .copy-right {
+    flex-direction: column;
+    gap: 8px 0;
+
+    ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px 0;
+    }
+  }
+
+}

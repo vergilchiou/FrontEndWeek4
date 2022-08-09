@@ -1,0 +1,208 @@
+.prod-options {
+  // text-align: center;
+
+  .nav-prod {
+    display: flex;
+    justify-content: center;
+
+
+    li {
+      text-align: center;
+
+      border: 1px solid #DCDCDC;
+      // border-bottom: 8px solid transparent;
+      width: 33.333%;
+
+      // &:hover {
+      //   border-bottom: 8px solid #AA0601;
+      // }
+
+      a {
+        border-bottom: 8px solid transparent;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: $fz-base * 2;
+        font-weight: 500;
+        color: #000;
+
+        &:hover {
+          border-bottom: 8px solid #AA0601;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  text-align: center;
+  margin-top: 80px;
+
+  h3 {
+    font-size: $fz-base * 2.625;
+  }
+
+  h4 {
+    font-size: $fz-base * 2;
+    margin-bottom: 32px;
+  }
+
+  .prod-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px 24px;
+    margin-bottom: 80px;
+
+    .prod-card {
+      width: 23.5%;
+    }
+
+    .prod-info {
+      justify-content: space-between;
+
+      span:nth-child(2) {
+        color: $color-text-lr;
+        font-weight: 500;
+      }
+    }
+
+    .color-box {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+
+    .box-color-1 {
+      background-color: $color-box-1;
+      margin-right: 8px;
+    }
+
+    .box-color-2 {
+      background-color: $color-box-2;
+    }
+  }
+
+  .prod-sunglasses {
+
+    .prod-card {
+      width: 32.05%;
+    }
+  }
+
+  .pages-button {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+    li {
+      border: 1px solid #555555;
+
+      &:not(:last-child) {
+        border-right: none;
+      }
+    }
+
+    a {
+      color: #555555;
+    }
+  }
+
+  .prev,
+  .next {
+    padding: 12px;
+
+    &:hover {
+      background-color: #F2F2F2;
+      color: #555555;
+    }
+  }
+
+  .page {
+    padding: 12px;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .prod-options {
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .nav-prod {
+      li {
+        a {
+          padding-top: 16px;
+          padding-bottom: 16px;
+          font-size: $fz-base * 1.5;
+        }
+      }
+    }
+  }
+
+  .products {
+    .prod-items {
+      gap: 40px 24px;
+
+      .prod-card {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .prod-options {
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .nav-prod {
+      li {
+        h2 {
+          font-size: $fz-base;
+          margin-bottom: 0;
+        }
+
+      }
+    }
+  }
+
+  .optical-banner-img-1 {
+    content: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-1.png);
+  }
+
+  .optical-banner-img-2 {
+    content: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-2.png);
+  }
+
+  .sunglasses-banner-img-1 {
+    content: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-3.png);
+  }
+
+  .sunglasses-banner-img-2 {
+    content: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-4.png);
+  }
+
+  .products {
+
+    .prod-items {
+      gap: 24px;
+
+
+      .prod-card {
+        img {
+          width: 100%;
+        }
+
+        width: 100%;
+      }
+    }
+  }
+}
