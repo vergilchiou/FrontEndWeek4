@@ -697,4 +697,97 @@ footer {
       .products .prod-items .prod-card img {
         width: 100%; } }
 
+.locations {
+  margin-top: 96px;
+  margin-bottom: 80px; }
+  .locations h2 {
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 32px; }
+    .locations h2::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 72px;
+      top: 0;
+      left: 0;
+      background-color: #AA0601;
+      margin-right: 16px; }
+  .locations .select-place {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 24px;
+    gap: 16px;
+    margin-bottom: 40px; }
+    .locations .select-place select {
+      padding: 6px 12px;
+      font-size: 18px;
+      min-width: 304px;
+      border: 1px solid #CED4DA; }
+  .locations .store-items {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0 24px; }
+    .locations .store-items:nth-child(2) {
+      padding-left: 24px;
+      padding-right: 24px; }
+    .locations .store-items li {
+      margin-bottom: 48px; }
+    .locations .store-items .store-card {
+      width: 31%; }
+      .locations .store-items .store-card h3 {
+        font-size: 24px;
+        padding: 8px 24px;
+        border: 1px solid #00000020; }
+      .locations .store-items .store-card .store-info {
+        padding: 16px 24px;
+        border: 1px solid #00000020; }
+        .locations .store-items .store-card .store-info li {
+          font-size: 20px;
+          gap: 10px; }
+          .locations .store-items .store-card .store-info li:not(:last-child) {
+            margin-bottom: 8px; }
+      .locations .store-items .store-card .details {
+        font-size: 19px;
+        line-height: 27px;
+        color: #fff;
+        text-align: center;
+        background-color: #000;
+        padding: 16px; }
+
+@media (max-width: 992px) {
+  .locations .store-items {
+    gap: 24px; }
+    .locations .store-items .store-card {
+      width: 48%; }
+      .locations .store-items .store-card .details {
+        padding: 16px 130px; } }
+
+@media (max-width: 767px) {
+  .locations {
+    margin-top: 40px;
+    margin-bottom: 64px; }
+    .locations h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+      -moz-text-align-last: left;
+           text-align-last: left; }
+      .locations h2::before {
+        height: 36px; }
+    .locations .select-place {
+      font-size: 16px;
+      gap: 8px;
+      margin-bottom: 24px; }
+      .locations .select-place select {
+        width: 100%;
+        min-width: auto; }
+    .locations span {
+      white-space: nowrap; }
+    .locations .store-items .store-card {
+      width: 100%; } }
+
 /*# sourceMappingURL=all.css.map */
