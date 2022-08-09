@@ -732,9 +732,6 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 0 24px; }
-    .locations .store-items:nth-child(2) {
-      padding-left: 24px;
-      padding-right: 24px; }
     .locations .store-items li {
       margin-bottom: 48px; }
     .locations .store-items .store-card {
@@ -757,7 +754,8 @@ footer {
         color: #fff;
         text-align: center;
         background-color: #000;
-        padding: 16px; }
+        padding: 16px;
+        white-space: nowrap; }
 
 @media (max-width: 992px) {
   .locations .store-items {
@@ -765,7 +763,7 @@ footer {
     .locations .store-items .store-card {
       width: 48%; }
       .locations .store-items .store-card .details {
-        padding: 16px 130px; } }
+        padding: 16px; } }
 
 @media (max-width: 767px) {
   .locations {
@@ -785,8 +783,6 @@ footer {
       .locations .select-place select {
         width: 100%;
         min-width: auto; }
-    .locations span {
-      white-space: nowrap; }
     .locations .store-items .store-card {
       width: 100%; } }
 
